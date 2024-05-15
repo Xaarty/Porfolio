@@ -1,0 +1,24 @@
+.header {
+    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: 60px calc(50%) auto ;
+
+    &_git {
+        display: grid;
+        justify-content: end;
+    }
+
+    &_nav {
+        display: grid;
+        white-space: nowrap;
+        grid-template-columns: min-content min-content min-content min-content;
+        justify-content: end;
+        align-content: center;
+        gap: 1rem;
+    }
+
+    &_link p { 
+        font-weight: 700;
+        font-family: $roboto;
+    }
+}

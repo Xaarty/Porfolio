@@ -1,0 +1,52 @@
+.propos {
+    background: #212F3C;
+    padding: 2rem 2rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    &_img {
+        width: 10px;
+    }
+
+    &_txt {
+        color: $white;
+        &_title {
+
+        }
+
+        &_paragraph{
+
+        }
+    }
+}
+
+.portrait {
+    
+    &_block {
+        display: grid;
+        grid-template-columns: auto 50%;
+        margin: 0 8rem;
+
+        &_txt {
+            &_title {
+
+            }
+
+            &_subtitle {
+
+            }
+
+            &_button {
+
+            }
+        }
+
+        &_imgcontainer {
+            padding: 25%;
+            &_img {
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
