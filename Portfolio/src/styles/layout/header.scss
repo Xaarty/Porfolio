@@ -1,7 +1,7 @@
 .header {
     margin: 0 1rem;
     display: grid;
-    grid-template-columns: 60px calc(50%) auto ;
+    grid-template-columns: 60px calc(50% - 30px) auto ;
 
     &_git {
         display: grid;
@@ -20,5 +20,15 @@
     &_link p { 
         font-weight: 700;
         font-family: $roboto;
+    }
+}
+
+.bar {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    &_bar {
+        width: 8%;
+        border: solid 2px $black;
     }
 }

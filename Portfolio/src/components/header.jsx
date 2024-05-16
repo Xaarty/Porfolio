@@ -14,6 +14,10 @@ export default function Header() {
             <HashLink to="/#propos" className="header_nav_link"><p>GitHub</p></HashLink>
           </nav>
         </div>
+        <div className="bar">
+          <div className="bar_bar"></div>
+          <div className="bar_bar"></div>
+        </div>
       </header>
     );
   }
