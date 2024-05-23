@@ -40,6 +40,7 @@ const MotionPathAnimation = () => {
             </linearGradient>
         </defs>
         </svg>
+
       </div>
     );
 };

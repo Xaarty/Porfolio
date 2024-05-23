@@ -5,6 +5,7 @@ import * as ReactDOM from "react-dom/client";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Home from "./routes/home";
+import Location from "./routes/projet1.jsx";
 
 import store from "./store.js";
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/location-immobiliere",
+        element: <Location />,
       },
     ],
   },

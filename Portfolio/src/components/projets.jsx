@@ -11,7 +11,7 @@ export default function Projets() {
             <div className="projets_individual">
                 <h3>Création d'une application web de location immobilière avec React</h3>
                 <div className="projets_individual_card">
-                    <Link to="/" className="projets_individual_card_ancre"><img src="./immobilier-react.webp" alt="projet immobilier react" className="projets_individual_card_ancre_img" /></Link>
+                    <Link to="/location-immobiliere" className="projets_individual_card_ancre"><img src="./immobilier-react.webp" alt="projet immobilier react" className="projets_individual_card_ancre_img" /></Link>
                     <div className="projets_individual_card_txt">
                         <div className="projets_individual_card_txt_titre"><p>Application de location immobilière</p></div>
                         <div className="projets_individual_card_txt_annee"><p>2024</p></div>

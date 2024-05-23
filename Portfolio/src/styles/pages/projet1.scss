@@ -1,0 +1,28 @@
+.block {
+    margin: 0 2rem;
+    display: grid;
+    gap: 1.5rem;
+
+    &_title {
+        display: grid;
+        font-size: 2rem;
+        text-align: center;
+        font-family: $spectral;
+
+        h1 {
+            margin-bottom: 0;
+        }
+    }
+
+    &_imglink {
+        &_git {}
+    }
+
+    &_resume {
+
+    }
+
+    &_stacks {
+
+    }
+}
