@@ -14,6 +14,13 @@
             margin-bottom: 0;
         }
 
+        h2 {
+            margin: 0;
+            font-size: 1.6rem;
+            font-family: $unbutu;
+            color: #4D3B3B;
+        }
+
         &_cards {
             display: grid;
             grid-template-columns: min-content min-content;
@@ -41,6 +48,8 @@
         background-color: #f2f2f2;
         border-bottom-left-radius: 2rem;   
         border-bottom-right-radius: 2rem; 
+        display: grid;
+        justify-content: center;
         &_img {
             border-radius: 0;
         }
@@ -63,11 +72,45 @@
     }
 
     &_resume {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+
+        p {
+            font-family: $unbutu;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        
         h2 {
             font-family: $spectral;
             font-size: 2rem;
+        }
+
+        &_def {
+            background-color: #f2f2f2;
+            width: 100%;
+            padding: 1rem 1.2rem;
+
+            &_imgblock {               
+                display: flex;
+                justify-content: center;
+                margin: 1.5rem 0;
+                &_img {
+                    max-width: 50%;
+                }
+            }
+
+            ul {
+                list-style: none;
+                margin: 1rem 0 0 0;
+                font-size: 1.3rem;
+                li {
+                    text-indent: -1rem;
+                    margin-top: 0.3rem;
+                }
+            }
         }
     }
 
