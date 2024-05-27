@@ -129,6 +129,8 @@
     
     &_individual {
         margin: 0 1rem;
+        display: grid;
+        justify-content: center;
 
         &_card {
             display: grid;

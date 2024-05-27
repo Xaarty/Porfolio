@@ -5,6 +5,7 @@
 
     &_title {
         display: grid;
+        gap: 0.5rem;
         font-size: 2rem;
         text-align: center;
         font-family: $spectral;
@@ -12,17 +13,71 @@
         h1 {
             margin-bottom: 0;
         }
+
+        &_cards {
+            display: grid;
+            grid-template-columns: min-content min-content;
+            gap: 1rem;
+            white-space: nowrap;
+            margin-left: 5rem;
+
+            &_individual {
+                background-color: #f2f2f2;
+                padding: 0.3rem 0.6rem;
+                border-radius: 2rem;
+                font-family: $unbutu;
+                font-weight: 300;
+                font-size: 1.5rem;
+            }
+        }
+
+        &_bar {
+            border: solid 2px $black;
+            width: 35%;
+        }
     }
 
     &_imglink {
-        &_git {}
+        background-color: #f2f2f2;
+        border-bottom-left-radius: 2rem;   
+        border-bottom-right-radius: 2rem; 
+        &_img {
+            border-radius: 0;
+        }
+        
+        &_card {
+            display: grid;
+            justify-content: center;
+            &_git {
+                background-color: $black;
+                width: fit-content;
+                padding: 0.3rem 0.6rem;
+                border-radius: 2rem;
+                margin-top: 1rem;
+                color: $white;
+                font-family: $spectral;
+                margin-bottom: 1rem;
+                box-shadow: -0.1rem 0.3rem 0.3rem 0.1rem rgba(0, 0, 0, 0.2);
+            }
+        }
     }
 
     &_resume {
-
+        display: grid;
+        justify-content: center;
+        h2 {
+            font-family: $spectral;
+            font-size: 2rem;
+        }
     }
 
     &_stacks {
 
+        display: grid;
+        justify-content: center;
+        h3 {
+            font-family: $spectral;
+            font-size: 1.6rem;
+        }
     }
 }
