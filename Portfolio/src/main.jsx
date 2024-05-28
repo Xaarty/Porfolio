@@ -6,6 +6,7 @@ import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Home from "./routes/home";
 import Location from "./routes/projet1.jsx";
+import Bank from "./routes/projet2.jsx"
 
 import store from "./store.js";
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
         path: "/location-immobiliere",
         element: <Location />,
       },
+      {
+        path: "/bank",
+        element: <Bank />
+      }
     ],
   },
 ]);

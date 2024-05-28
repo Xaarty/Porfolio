@@ -1,30 +1,32 @@
 import { Link } from "react-router-dom"
 import { NavLink } from "react-router-dom";
 
-export default function Location () {
+export default function Bank () {
     return (
         <section className="block">
             <div className="block_title">
-                <h1>Création d'une application web de location immobilière avec React</h1>
+                <h1>Implémentation du front-end d'une application bancaire avec React</h1>
                 <h2>Projet OpenClassrooms</h2>
                 <div className="block_title_bar"></div>
                 <div className="block_title_cards">
                     <div className="block_title_cards_individual">React</div>
                     <div className="block_title_cards_individual">React Router</div>
+                    <div className="block_title_cards_individual">Redux</div>
                 </div>
             </div>
             <div className="block_imglink">
-                <img src="./immobilier-react.webp" alt="projet immobilier react" className="projets_individual_card_ancre_img block_imglink_img" />
+                <img src="./bank.webp" alt="projet bancaire react" className="projets_individual_card_ancre_img" />
                 <div className="block_imglink_card"><NavLink to="https://github.com/Xaarty/Projet8" className="block_imglink_card_git">Projet sur GitHub</NavLink></div>
             </div>
             <div className="block_resume">
                 <h2>Quel est la nature de ce projet ?</h2>
                 <div className="block_resume_def">
-                    <p>Ce projet a lieu dans le cadre de la formation OpenClassrooms de développeur web. Il requiert d'implémenter le front-end de KASA à l'aide de <span className="bold">React</span> et <span className="bold">React Router</span>.</p>
+                    <p>Ce projet a lieu dans le cadre de la formation OpenClassrooms de développeur web. Il requiert d'implémenter le front-end de ARGENTBANK à l'aide de <span className="bold">React</span>, <span className="bold">React Router</span> et <span className="bold">Redux</span>.</p>
                 </div>
                 <h3>Détails du projet</h3>
                 <div className="block_resume_def">                  
-                    <p>Kasa est un site de location immobilière. Il comporte une page d'accueil avec des photos de logements. Lorsque l'utilisateur clique sur la photo d'un logement, il est redirigé vers la fiche du logement.</p>
+                    <p>ArgentBank est un site bancaire ou un utilisateur pourra se connecter à son profile pour consulter ses comptes.</p>
+                    <p> Il comporte une page d'accueil statique, une page de connection et une page utilisateur lorsque celui ci est connecté.</p>
                     <div className="block_resume_def_imgblock"><img src="./immobilier-react-logement.webp" alt="exemple de logement sur le site kasa" className="block_resume_def_imgblock_img"></img></div>
                     <div className="block_resume_def_list">
                         <p>La fiche logement comporte les détails de la location, à savoir :</p>

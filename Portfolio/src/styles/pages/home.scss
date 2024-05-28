@@ -29,7 +29,7 @@
 }
 
 .portrait {
-    margin: 3rem 0;
+    margin: 11rem 0 3rem 0;
     position: relative;
     &_block {
         display: grid;
@@ -122,15 +122,37 @@
 
     }
 
+    &_separating {
+        margin: 1rem 8rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #212F3C;
+        height: 1rem;
+        &_bar {
+            height: 0px;
+            border: solid 1px $white;
+            width: 25%;
+        }
+    }
+
     h2 {
+        font-size: 2.5rem;
         padding-top: 1rem;
         text-align: center;
+        font-family: $spectral;
     }
     
     &_individual {
         margin: 0 1rem;
         display: grid;
         justify-content: center;
+
+        h3 {
+            text-align: center;
+            font-family: $unbutu;
+            font-size: 1.3rem;
+        }
 
         &_card {
             display: grid;
@@ -148,6 +170,7 @@
                     max-width: 100%;
                     border-radius: 2%;
                     transition: transform .1s;
+                    border-radius: 0;
                 }
     
                 &_img:hover {
