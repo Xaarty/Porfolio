@@ -29,8 +29,15 @@
 }
 
 .portrait {
-    margin: 11rem 0 3rem 0;
+    margin: 0;
+    padding: 10rem 0 3rem 0;
     position: relative;
+    background-image: linear-gradient(
+  180deg,
+  hsl(200deg 99% 36%) 0%,
+  hsl(205deg 55% 30%) 53%,
+  hsl(209deg 29% 18%) 100%
+);
     &_block {
         display: grid;
         grid-template-columns: auto auto;
@@ -222,3 +229,65 @@
         }
     }
 }
+
+.intro {
+    position: relative;
+    height: 150vh;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "whole-grid";
+
+    &_parallax {
+       
+        display: block;
+        position: relative;
+        z-index: 10;
+        grid-area: whole-grid;
+
+        &_block {
+            display: flex;
+            position: relative;
+            
+
+            &_img {
+                height: 150vh;
+                object-fit: cover;
+                background-position: bottom center;
+                background-size: auto 1038px;
+                background-repeat: repeat-x;
+                width: 100%;
+                position: absolute;
+                
+            }
+
+            &_txt {
+                position: relative;
+            }
+
+            .title {
+                margin: 15rem 0 0 0;
+                text-align: center;
+                position: relative;
+                font-size: 8rem;
+                font-family: $spectral;
+            }
+
+            .subtitle {
+                margin: 0;
+                text-align: center;
+                position: relative;
+                font-size: 3rem;
+                font-family: $spectral;
+            }
+        }
+    
+       
+    
+        
+    }
+}
+
