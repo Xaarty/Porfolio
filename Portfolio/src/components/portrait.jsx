@@ -1,9 +1,9 @@
-import MotionPathAnimation from "./infiniteAnimation";
+// import MotionPathAnimation from "./infiniteAnimation";
 
 export default function Portrait () {
     return (
         <section className="portrait">
-            <MotionPathAnimation />
+            {/* <MotionPathAnimation /> */}
             <div className="portrait_block">
                 <div className="portrait_block_txt">
                     <h1 className="portrait_block_txt_title">Mikael Caillaud</h1>

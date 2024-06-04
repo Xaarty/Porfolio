@@ -9,7 +9,7 @@ export default function Intro() {
     target: ref,
     offset: ["start start", "end start"],
   });
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "65%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "75%"]);
   
     return (
            <section className="intro" ref={ref}>
