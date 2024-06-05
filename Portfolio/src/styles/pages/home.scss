@@ -1,5 +1,5 @@
 .home-content {
-    background: linear-gradient(180deg, rgb(244, 244, 244) 0%,rgb(244, 244, 244) 50%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgb(244, 244, 244) 0%,rgb(244, 244, 244) 97%,rgb(0, 0, 0) 100%);
 }
 
 .propos {
@@ -363,6 +363,70 @@
         
     }
 }
+
+.competences {
+    padding-bottom: 2rem;
+
+    h2 {
+        text-align: center;
+        font-size: 7rem;
+        font-family: $spectral;
+    }
+
+    &_cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 0 2rem;
+        gap: 2rem;
+        
+        &_card {
+            background-color: #212F3C;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 2rem;
+            
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+                font-family: $unbutu;
+                color: $white;
+            }
+
+            &_block {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                &_individual {
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 0.2rem;
+                    padding: 0 0.5rem;
+    
+                    h4 {
+                        font-size: 1.5rem;
+                        color: $white;
+                        font-family: $unbutu;
+                        text-align: center;
+                    }
+    
+                    &_img {
+                        height: 8rem;
+                        display: flex;
+
+                        img {
+                        max-height: 100%;
+                        max-width: 8rem;
+                        object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 @keyframes slidePortrait {
     0% {
