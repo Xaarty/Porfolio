@@ -1,16 +1,106 @@
 footer {
     display: grid;
+    padding-bottom: 2rem;
     align-items: center;
     justify-content: center;
-    form {
-        margin-top: 1rem;
-        font-size: 2rem;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        background-color: $black;
+    background-color: $black;
+
+    h2 {
+        text-align: center;
         color: $white;
-        width: 100%;
+        font-family: $spectral;
+        font-size: 4rem;
+        text-decoration: overline;
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        font-family: $unbutu;
+        text-decoration: underline;
+        text-underline-offset: 0.2rem;
+        text-underline-position: under;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100vw;
+
+        .form {
+            font-size: 2rem;
+            display: grid;
+            grid-template-rows: max-content max-content max-content max-content max-content max-content;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            width: 100%;
+
+            &_label {
+                font-size: 1.5rem;
+                font-family: $unbutu;
+            }
+
+            &_input-field {
+                margin-bottom: 2rem;
+                height: fit-content;
+
+                #message, #email {
+                    height: 2rem;
+                    width: 20rem;
+                    
+                }
+
+                #message::placeholder,
+                #email::placeholder {
+                    font-size: 1rem;
+                    font-family: $unbutu;
+                    padding: 0.4rem;
+                }
+
+                #message {
+                    height: 10rem;
+                }
+
+            }
+
+            &_input {
+                color: $black;
+                font-size: 1.5rem;
+                font-family: $unbutu;
+                font-weight: 500;
+                background-color: $white;
+                border: none;
+                border-radius: 0.2rem;
+                padding: 0.5rem 0;
+            }
+        }
+
+        &_perso {
+            color: $white;
+            display: grid;
+            gap: 2rem;
+
+
+            &_detail {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &_box {
+                    background-color: #212F3C;
+                    width: 50%;
+                    text-align: center;
+                    padding: 0.1rem 0.7rem;
+                }
+            }
+        }
+
     }
 }
 

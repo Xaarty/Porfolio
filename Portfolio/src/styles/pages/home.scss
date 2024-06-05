@@ -1,4 +1,9 @@
+.home-content {
+    background: linear-gradient(180deg, rgb(244, 244, 244) 0%,rgb(244, 244, 244) 50%, rgb(0, 0, 0) 100%);
+}
+
 .propos {
+    max-height: 35.75rem;
     background: #212F3C;
     margin-left: 10rem;
     margin-right: 1rem;
@@ -10,13 +15,14 @@
     grid-template-columns: auto 50%;
 
     &_container:hover {
-        width: 50%;
+        width: 48%;
         
     }
 
     &_container {
         display: grid;
         width: 100%;
+        max-width: 35.5rem;
         grid-template-columns: 100%;
         justify-items: center;
         align-items: center;
@@ -128,6 +134,7 @@
 
             &_button {
                 width: 40%;
+                max-width: 18rem;
                 height: 2.5rem;
                 min-width: 11.25rem;
                 font-family: $unbutu;

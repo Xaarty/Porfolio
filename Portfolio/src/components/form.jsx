@@ -1,14 +1,16 @@
 export default function Form () {
     return (
-        <form>
-            <label htmlFor="email">Email</label>
-            <div className="input-field">
-            <input type="email" id="email" name="email" placeholder="caillaud.mikael.pro@gmail.com" />
+        <form className="form">
+            <h3>Écrivez-moi ici : </h3>
+            <label htmlFor="email" className="form_label">Email</label>
+            <div className="form_input-field">
+                <input type="email" id="email" name="email" placeholder="votre email" />
             </div>          
-            <label htmlFor="message">Message</label>
-            <div className="input-field">
-                <input type="textarea" id="message" name="message" placeholder="votre message" />
+            <label htmlFor="message" className="form_label">Message</label>
+            <div className="form_input-field">
+                <textarea type="textarea" id="message" name="message" placeholder="votre message" />
             </div>
+            <input type="submit" name="button" className="form_input" value="ENVOYER" />
         </form>
     )
 }
