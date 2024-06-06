@@ -10,8 +10,8 @@ export default function Home () {
             <Intro />
             <Portrait />
             <Propos />
-            <Projets />
             <Competences />
+            <Projets />
         </div>
     )
 }
