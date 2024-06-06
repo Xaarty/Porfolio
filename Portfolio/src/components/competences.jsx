@@ -1,3 +1,4 @@
+import Collapse from "./collapse";
 
 
 export default function Competences() {{
@@ -19,6 +20,7 @@ export default function Competences() {{
                             <div className="competences_cards_card_block_individual_img">
                                 <img src="./css-logo.webp" alt="figma logo" />
                             </div>
+                            <Collapse />
                         </div>
                         <div className="competences_cards_card_block_individual">
                             <h4>JavaScript</h4>

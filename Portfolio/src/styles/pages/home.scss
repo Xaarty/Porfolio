@@ -15,7 +15,7 @@
     grid-template-columns: auto 50%;
 
     &_container:hover {
-        width: 48%;
+        transform: scale(0.5); 
         
     }
 
@@ -26,7 +26,7 @@
         grid-template-columns: 100%;
         justify-items: center;
         align-items: center;
-        transition: width 3s ease-in-out;
+        transition: transform 1s ease-in-out;
 
         &_1 {
             z-index: 5;
@@ -160,7 +160,8 @@
     grid-template-areas: "whole-grid";
 
     &_parallax {
-        display: block;
+        display: grid;
+        grid-template-rows: auto auto auto;
         position: relative;
         z-index: 10;
         grid-area: whole-grid;
@@ -241,7 +242,7 @@
                         background: #212F3C;
                         padding: 0.2rem;
                         border-radius: 0.4rem;
-                        opacity: 0.7;
+                        
                         width: fit-content;
                         height: fit-content;
                         grid-row: 1 / -1;
@@ -303,7 +304,7 @@
 }
 
 .intro {
-    position: relative;
+    
     height: 150vh;
     perspective: 1px;
     overflow-x: hidden;
@@ -316,13 +317,13 @@
     &_parallax {
        
         display: block;
-        position: relative;
+        
         z-index: 10;
         grid-area: whole-grid;
 
         &_block {
             display: flex;
-            position: relative;
+            
             
 
             &_img {
@@ -332,19 +333,19 @@
                 background-size: auto 1038px;
                 background-repeat: repeat-x;
                 width: 100%;
-                position: absolute;
+                
                 transform: scaleY(-1);
                 
             }
 
             &_txt {
-                position: relative;
+                
             }
 
             .title {
                 margin: 15rem 0 0 0;
                 text-align: center;
-                position: relative;
+                
                 font-size: 8rem;
                 font-family: $spectral;
             }
@@ -352,7 +353,7 @@
             .subtitle {
                 margin: 0;
                 text-align: center;
-                position: relative;
+                
                 font-size: 3rem;
                 font-family: $spectral;
             }
@@ -365,7 +366,7 @@
 }
 
 .competences {
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 
     h2 {
         text-align: center;
@@ -400,6 +401,7 @@
                 &_individual {
                     display: flex;
                     flex-direction: column;
+                    
                     border-radius: 0.2rem;
                     padding: 0 0.5rem;
     
@@ -420,11 +422,32 @@
                         object-fit: cover;
                         }
                     }
+
+                    .collapse {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.5rem;
+
+                        &_button {
+                            width: 2rem;
+                        height: 2rem;
+                        margin-top: 1rem;
+                        background-color: $white;
+                        border-radius: 50%;
+                        }
+
+                        &_txt {
+                            background-color: $white;
+                        }
+                    }
                 }
             }
         }
     }
 }
+
+
 
 
 
