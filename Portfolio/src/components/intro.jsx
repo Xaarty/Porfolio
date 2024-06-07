@@ -20,7 +20,7 @@ export default function Intro() {
                     <ParallaxLayer offset={0} speed={10} className="intro_parallax_block">
                         <motion.div style={{y: textY}} className="intro_parallax_block_img intro_parallax_block_txt">
                             <h1 className="title">P O R T F O L I O</h1>
-                            <h2 className="subtitle">Développer Web</h2>
+                            <h2 className="subtitle">Développeur Web</h2>
                         </motion.div>
                     </ParallaxLayer>
                 </Parallax>

@@ -4,7 +4,7 @@ import Collapse from "./collapse";
 export default function Competences() {{
     return (
         <section className="competences">
-            <h2>Mes compétences</h2>
+            <h2>MES COMPÉTENCES</h2>
             <div className="competences_cards">
                 <div className="competences_cards_card">
                     <h3>Langages</h3>
@@ -60,6 +60,23 @@ export default function Competences() {{
                             <h4>Figma</h4>
                             <div className="competences_cards_card_block_individual_img">
                                 <img src="./logo-figma.webp" alt="figma logo" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="competences_cards_card">
+                    <h3>Outils</h3>
+                    <div className="competences_cards_card_block">
+                        <div className="competences_cards_card_block_individual">
+                            <h4>Visual Studio Code</h4>
+                            <div className="competences_cards_card_block_individual_img">
+                                <img src="./vscode-logo.webp" alt="figma logo" />
+                            </div>
+                        </div>
+                        <div className="competences_cards_card_block_individual">
+                            <h4>GitHub</h4>
+                            <div className="competences_cards_card_block_individual_img">
+                                <img src="./github_logo-2.webp" alt="figma logo" />
                             </div>
                         </div>
                     </div>
