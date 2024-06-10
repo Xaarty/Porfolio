@@ -404,6 +404,7 @@
 
                 &_individual {
                     display: flex;
+                    align-items: center;
                     flex-direction: column;
                     
                     border-radius: 0.2rem;
@@ -434,15 +435,38 @@
                         gap: 0.5rem;
 
                         &_button {
+                            display: flex;
+                            align-items: center;
                             width: 2rem;
-                        height: 2rem;
-                        margin-top: 1rem;
-                        background-color: $white;
-                        border-radius: 50%;
+                            height: 2rem;
+                            margin-top: 1rem;
+                            background-color: $white;
+                            border-radius: 50%;
+                            border: none;
+
+                            &_img {
+                                max-width: 100%;
+                            }
                         }
 
-                        &_txt {
+                        &_text {
                             background-color: $white;
+                            border-radius: 5px;
+
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: all 0.2s ease-out;
+                            padding: 0;
+
+                            &.is_open {
+                                padding: 10px 20px;
+                            }
+
+                            p {
+                                font-family: $unbutu;
+                                font-size: 1rem;
+                                margin: 0;
+                            }
                         }
                     }
                 }

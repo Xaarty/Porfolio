@@ -1,0 +1,15 @@
+
+[
+    {
+        "language": "CSS3",
+        "frameworks": ["SASS", "Tailwind"]
+    },
+    {
+        "language": "JavaScript",
+        "frameworks": ["TypeScript", "React", "React-Router", "React-Redux"]
+    },{
+        "language": "Notion",
+        "frameworks": ["Kanban"]
+    }
+
+]

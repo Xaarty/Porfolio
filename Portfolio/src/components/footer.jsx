@@ -8,11 +8,11 @@ export default function Footer() {
           < Form />
           <div className="contact_perso">
             <div className="contact_perso_detail">
-            <h3>Envoyez moi un mail:</h3>
+            <h3>Envoyez moi un mail :</h3>
             <div className="contact_perso_detail_box"><p>caillaud.mikael.pro@gmail.com</p></div>
             </div>
             <div className="contact_perso_detail">
-              <h3>Téléphonez moi:</h3>
+              <h3>Téléphonez moi :</h3>
               <div className="contact_perso_detail_box"><p>06.45.21.49.57</p></div>
             </div>
           </div>

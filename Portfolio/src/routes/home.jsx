@@ -4,6 +4,7 @@ import Projets from "../components/projets"
 import Intro from "../components/intro"
 import Competences from "../components/competences"
 
+
 export default function Home () {
     return (
         <div className="home-content">
