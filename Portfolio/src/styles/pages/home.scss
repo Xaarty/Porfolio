@@ -182,7 +182,7 @@
 
             &_title {
                 position: relative;
-                width: 100%;
+                width: 100%; 
                 &_h2 {
                 margin: 10rem 0 0 0;
                 text-align: center;
@@ -194,76 +194,156 @@
                 
             }
 
-            &_projet1 {
+            &_projet {
                 display: grid;
                 justify-content: center;
                 align-items: center;
-                &_h3 {
-                    margin: 20% 0 3rem 0;
-                    text-align: center;
-                    position: relative;
-                    font-size: 3rem;
-                    font-family: $unbutu;
-                }
-
-                &_block {
-                    display: grid;
-                    align-items: end;
-                    
-
-                    &_ancre {
-                        grid-row: 1 / 1;
-                        grid-column: 1;
-    
-                        &_img {
-                            position: relative;
-                            z-index: 2;
-                            
-                            object-fit: cover;
-                            max-width: 100%;
-                            border-radius: 2%;
-                            transition: transform .1s;
-                            border-radius: 0;
-                        }
-    
-                        &_img:hover {
-                            -ms-transform: scale(1.02);
-                            -webkit-transform: scale(1.02);
-                            transform: scale(1.02);
-                        }
+               
+                .caroussel {
+                    height: 50%;
+                    margin-top: 25%;
+                    align-self: flex-start;
+                    h3 {
+                        margin-bottom: 3rem;
+                        text-align: center;
+                        position: relative;
+                        font-size: 3rem;
+                        font-family: $unbutu;
                     }
     
-                    &_txt {
-                        position: relative;
-                        z-index: 3;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 0.5rem;
-                        background: #212F3C;
-                        padding: 0.2rem;
-                        border-radius: 0.4rem;
+                    &_block {
+                        height: 83%;
+                        display: grid;
+                        align-items: end;
                         
-                        width: fit-content;
-                        height: fit-content;
-                        grid-row: 1 / -1;
-                        grid-column: 1;
-                        margin-left: 3%;
-                        margin-bottom: 2%;
-                        &_titre {
-                            font-size: 1.8rem;
-                            font-weight: $font_weight_medium;
-                            color: $white;
-                            p {
-                                margin: 0;
+                        
+
+                        &_slide {
+                            align-self: flex-start;
+                            display: grid;
+                            margin: 0 2rem;
+                            
+
+                            &_buttons {
+                                grid-row: 1 / 1;
+                                grid-column: 1;
+                                position: relative;
+                                top: 50%;
+                                display: grid;
+                                grid-template-columns: auto auto;
+                                align-items: flex-start;
+                                justify-content: space-between;
+                                
+
+                                &_button {
+                                    display: flex;
+                                    
+                                    border: none;
+                                    background: transparent;
+                                    
+                                    svg {
+                                        width: 3.5rem;
+                                        height: 3.5rem;
+                                    }
+                                    
+                                }
+
+                                .arrow_left {
+                                    left: 0;
+                                    rotate: 180deg;
+                                }
+    
+                                .arrow_right {
+                                    right: 0;
+                                }
+                            }
+
+                            
+        
+                            &_link {
+                                display: flex;
+                                grid-row: 1 / 1;
+                                grid-column: 1;
+                                img {
+                                    position: relative;
+                                    
+                                    object-fit: cover;
+                                    max-width: 100%;
+                                    height: inherit;
+                                    border-radius: 2%;
+                                    transition: transform .1s;
+                                    border-radius: 0;
+                                }
+            
+                                &_img:hover {
+                                    -ms-transform: scale(1.02);
+                                    -webkit-transform: scale(1.02);
+                                    transform: scale(1.02);
+                                }
+                            }
+
+                            &_tag {
+                                display: flex;
+                                align-items: end;
+                                grid-row: 1 / 1;
+                                grid-column: 1;
+                                z-index: 3;
+                                
+                                
+                                &_background {
+                                    display: flex;
+                                    gap: 0.5rem;
+                                    background: #212F3C;
+                                    padding: 0.5rem;
+                                    border-radius: 0.4rem;
+                                    
+                                    width: fit-content;
+                                    height: fit-content;
+                                    margin-left: 3%;
+                                    margin-bottom: 2%;
+                                    &_titre {
+                                        font-size: 1.8rem;
+                                        font-weight: $font_weight_medium;
+                                        color: $white;
+                                        p {
+                                            margin: 0;
+                                        }
+                                    }
+    
+                                    &_annee {
+                                        font-size: 1.8rem;
+                                        font-weight: $font_weight_medium;
+                                        color: $white;
+                                        p {
+                                            margin: 0;
+                                        }
+                                    }
+                                }
                             }
                         }
         
-                        &_annee {
-                            font-size: 1.8rem;
-                            font-weight: $font_weight_medium;
-                            color: $white;
-                            p {
-                                margin: 0;
+                        &_txt {
+                            position: relative;
+                            z-index: 3;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.5rem;
+                            background: #212F3C;
+                            padding: 0.2rem;
+                            border-radius: 0.4rem;
+                            
+                            width: fit-content;
+                            height: fit-content;
+                            grid-row: 1 / -1;
+                            grid-column: 1;
+                            margin-left: 3%;
+                            margin-bottom: 2%;
+                            &_titre {
+                                
+                            }
+            
+                            &_annee {
+                                
                             }
                         }
                     }
