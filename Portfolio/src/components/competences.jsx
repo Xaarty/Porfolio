@@ -110,7 +110,7 @@ export default function Competences() {
                             </div>
                         </div>
                         <div className="competences_cards_card_block_individual">
-                            <h4>Git</h4>
+                            <h4>React Dev Tools</h4>
                             <div className="competences_cards_card_block_individual_img">
                                 <img src="./react-dev-tools-icon.webp" alt="react developper tools logo" />
                             </div>

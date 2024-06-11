@@ -73,16 +73,6 @@ footer {
                     background-color: #F4F4F4;
                 }
             }
-
-            &_input {
-                height: 2.5rem;
-                color: $white;
-                font-size: 1.25rem;
-                font-family: $unbutu;
-                background-color: $black;
-                border: none;
-               
-            }
         }
 
         &_perso {
@@ -99,7 +89,7 @@ footer {
 
                 &_box {
                     color: $white;
-                    background-color: #212F3C;
+                    background-color: $main-color;
                     width: 50%;
                     text-align: center;
                     padding: 0.1rem 0.7rem;

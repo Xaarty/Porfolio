@@ -10,7 +10,7 @@ export default function Form () {
                 <label htmlFor="message" className="form_input-field_label">Message</label>
                 <textarea type="textarea" id="message" name="message" placeholder="votre message" />
             </div>
-            <input type="submit" name="button" className="form_input" value="ENVOYER" />
+            <input type="submit" name="button" className="form_input button" value="ENVOYER" />
         </form>
     )
 }

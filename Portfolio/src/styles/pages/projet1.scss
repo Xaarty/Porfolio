@@ -32,7 +32,7 @@
             margin: 0;
             font-size: 1.6rem;
             font-family: $unbutu;
-            color: #4D3B3B;
+            color: $black;
         }
 
         &_cards {
@@ -43,7 +43,7 @@
             margin-left: 5rem;
 
             &_individual {
-                background-color: #f2f2f2;
+                background-color: $light-gray;
                 padding: 0.3rem 0.6rem;
                 border-radius: 2rem;
                 font-family: $unbutu;
@@ -59,7 +59,7 @@
     }
 
     &_imglink {
-        background-color: #f2f2f2;
+        background-color: $light-gray;
         border-bottom-left-radius: 2rem;   
         border-bottom-right-radius: 2rem; 
         display: grid;
@@ -112,7 +112,7 @@
         }
 
         &_def {
-            background-color: #f2f2f2;
+            background-color: $light-gray;
             padding: 2rem 1.5rem;
             
 

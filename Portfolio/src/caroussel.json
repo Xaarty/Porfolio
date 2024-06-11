@@ -4,12 +4,14 @@
         "title": "Création d'une application web de location immobilière avec React",
         "picture": "./immobilier-react.webp",
         "subtitle": "location immobilière",
-        "annee": "2024"
+        "annee": "2024",
+        "path":"/location-immobiliere"
     },{
         "title": "Implémentation du front-end d'une application bancaire avec React",
         "picture": "./bank.webp",
         "subtitle": "location immobilière",
-        "annee": "2024"
+        "annee": "2024",
+        "path": "/bank"
     }
     
 
