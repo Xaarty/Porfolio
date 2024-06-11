@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
 import Collapse from "./collapse";
 import JsonData from "../frameworks.json";
 
@@ -7,10 +9,48 @@ export default function Competences() {
         return data ? data.frameworks : [];
     };
 
+    const targetRefCompetence = useRef(null);
+    const [inViewCompetence, setInViewCompetence] = useState(false);
+
+    useEffect(() => {
+        const handleScrollCompetence = () => {
+            if (targetRefCompetence.current) {
+                const top = targetRefCompetence.current.getBoundingClientRect().top;
+                const bottom = targetRefCompetence.current.getBoundingClientRect().bottom;
+                const windowHeight = window.innerHeight;
+                const percentageGap = 50;
+                const pixelGap = (windowHeight * percentageGap) / 100;
+
+                if ((top < windowHeight - pixelGap && window.scrollY > (window.lastScrollTopCompetence || 0)) ||
+                    (bottom > windowHeight - pixelGap && window.scrollY < (window.lastScrollTopCompetence || 0))) {
+                    setInViewCompetence(true);
+                } else {
+                    setInViewCompetence(false);
+                }
+
+                window.lastScrollTopCompetence = window.scrollY;
+            }
+        };
+
+        window.addEventListener("scroll", handleScrollCompetence);
+        return () => {
+            window.removeEventListener("scroll", handleScrollCompetence);
+        };
+    }, []);
+
     return (
-        <section className="competences">
+        <section className="competences" ref={targetRefCompetence}>
             <h2>MES COMPÉTENCES</h2>
-            <div className="competences_cards">
+            <motion.div 
+                className="competences_cards"
+                animate={{
+                    x: inViewCompetence ? "0" : "100%"
+                }}
+                transition={{
+                    duration: 0.3,
+                    type: "easeInOut"
+                }}
+            >
                 <div className="competences_cards_card">
                     <h3>Langages</h3>
                     <div className="competences_cards_card_block">
@@ -128,7 +168,7 @@ export default function Competences() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 }

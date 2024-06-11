@@ -3,6 +3,7 @@
 }
 
 .propos {
+    
     max-height: 35.75rem;
     background: $main-color;
     margin-left: 7%;
@@ -109,7 +110,7 @@
     margin: 0;
     padding: 10rem 0 3rem 0;
     position: relative;
-    animation: 2s ease-in slidePortrait ;
+
     &_block {
         display: grid;
         
@@ -570,14 +571,6 @@
 
 
 
-@keyframes slidePortrait {
-    0% {
-        transform: translateY(-10rem);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
 
 .button {
     font-family: $unbutu;
