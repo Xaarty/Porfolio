@@ -1,0 +1,180 @@
+.competences {
+    padding-bottom: 4rem;
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-family: $spectral;
+
+        @include tablet {
+            font-size: 4rem;
+        }
+
+        @include desktop {
+            font-size: 6rem;
+        }
+    }
+
+    &_cards {
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 2rem;
+        margin-right: 7%;
+        padding: 0.75rem;
+        gap: 1rem;
+        background-color: $main-color;
+
+        @include tablet {
+        display: grid;
+        grid-template-columns: auto auto;
+        }
+
+        @include desktop {
+            padding: 1rem;
+            gap: 2rem;
+        }
+        
+        &_card {
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 0.75rem;
+            border-radius: 1rem;
+
+            @include desktop {
+                padding-bottom: 1rem;
+            }
+            
+            h3 {
+                text-align: center;
+                font-size: 1.5rem;
+                margin: 1rem 0;
+                font-family: $unbutu;
+                color: $white;
+
+                @include tablet {
+                    font-size: 1.5rem;
+                    margin: 0.75rem 0;
+                }
+
+                @include desktop {
+                    font-size: 2rem;
+                }
+            }
+
+            &_block {
+                display: flex;
+                flex-direction: row;
+                gap: 0.2rem;
+                justify-content: space-around;
+
+                &_individual {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+
+                    @include tablet {
+                        padding: 0;
+                    }
+
+                    @include desktop {
+                        padding: 0 0.5rem;
+                    }
+    
+                    h4 {
+                        margin: 0.5rem 0;
+                        color: $white;
+                        font-family: $unbutu;
+                        text-align: center;
+                        font-size: 1rem;
+
+                        @include tablet {
+                            font-size: 1rem;
+                            margin: 0.5rem 0;
+                        }
+
+                        @include desktop {
+                            font-size: 1.5rem;
+                            margin: 1rem 0;
+                        }
+                    }
+    
+                    &_img {
+                        height: 6rem;
+                        display: flex;
+
+                        @include tablet {
+                            height: 6rem;
+                        }
+
+                        @include desktop {
+                            height: 8rem;
+                        }
+
+                        img {
+                        max-height: 100%;
+                        max-width: 6rem;
+                        object-fit: cover;
+
+                        @include tablet {
+                            max-width: 6rem;
+                        }
+
+                        @include desktop {
+                            max-width: 8rem;
+                        }
+                        }
+                    }
+
+                    .collapse {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.5rem;
+                        
+
+                        &_button {
+                            display: flex;
+                            align-items: center;
+                            width: 2rem;
+                            height: 2rem;
+                            margin-top: 0.5rem;
+                            background-color: $white;
+                            border-radius: 50%;
+                            border: none;
+
+                            @include desktop {
+                                margin-top: 1rem;
+                            }
+
+                            &_img {
+                                max-width: 100%;
+                            }
+                        }
+
+                        &_text {
+                            background-color: $white;
+                            border-radius: 5px;
+
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: all 0.2s ease-out;
+                            padding: 0;
+
+                            &.is_open {
+                                padding: 10px 20px;
+                            }
+
+                            p {
+                                font-family: $unbutu;
+                                font-size: 1rem;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

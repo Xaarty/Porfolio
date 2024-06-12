@@ -36,8 +36,9 @@ export default function Propos() {
         <section ref={targetRefPropos}>
             <motion.div
                 className="propos"
+                style={{ opacity: inViewPropos ? "1" : "0" }}
                 animate={{
-                    x: inViewPropos ? "0" : "-100%"
+                    x: inViewPropos ? "0" : "-120%"
                 }}
                 transition={{
                     duration: 0.3,

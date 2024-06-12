@@ -47,8 +47,8 @@ export default function Portrait() {
                 }}
             >
                 <div className="portrait_block_txt">
-                    <h1 className="portrait_block_txt_title">Mikael Caillaud</h1>
-                    <h2 className="portrait_block_txt_subtitle">Développeur web Front-end</h2>
+                    <h2 className="portrait_block_txt_title">Mikael Caillaud</h2>
+                    <h3 className="portrait_block_txt_subtitle">Développeur web Front-end</h3>
                     <div className="portrait_block_txt_buttons">
                         <Button className="portrait_block_txt_buttons_button button" txt="ME CONTACTER" />
                         <CV className="portrait_block_txt_buttons_button button" txt="MON CV" />

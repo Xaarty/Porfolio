@@ -1,0 +1,299 @@
+.projets {
+    margin-top: 5rem;
+    height: 150vh;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "whole-grid";
+
+    @include tablet {
+        height: 200vh;
+    }
+
+    &_parallax {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        position: relative;
+        z-index: 10;
+        grid-area: whole-grid;
+        
+        &_block {
+            display: flex;
+            position: relative;
+            justify-content: center;
+
+            &_background {
+                height: 150vh;
+                object-fit: cover;
+                background-position: bottom center;
+                background-size: auto 1038px;
+                background-repeat: repeat-x;
+                width: 100%;
+                position: absolute;
+                transform: scaleY(-1);
+
+                @include tablet {
+                    height: 200vh;
+                }
+            }
+
+            &_title {
+                position: relative;
+                width: 100%; 
+
+                &_h2 {
+                    margin-top: 10rem;
+                    text-align: center;
+                    position: relative;
+                    font-size: 2.5rem;
+                    font-family: $spectral;
+                    color: white;
+
+                    @include tablet {
+                        font-size: 5rem;
+                        margin-top: 12.5rem;
+                    }
+
+                    @include desktop {
+                        font-size: 7rem;
+                        margin-top: 15rem;
+                    }
+                }
+
+                
+            }
+
+            &_projet {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                margin: 0 1rem;
+               
+                @include tablet {
+                    margin: 0 2rem;
+                }
+
+                @include desktop {
+                    
+                }
+
+                .caroussel {
+                    margin-top: 60%;
+                    align-self: flex-start;
+
+                    @include tablet {
+                        margin-top: 50%;
+                    }
+
+                    @include desktop {
+                        margin-top: 40%;
+                    }
+                    h3 {
+                        margin-bottom: 3rem;
+                        text-align: center;
+                        position: relative;
+                        font-size: 1.5rem;
+                        font-family: $unbutu;
+                        color: white;
+
+                        
+
+                        @include tablet {
+                            
+                            font-size: 2.25rem;
+                        }
+    
+                        @include desktop {
+                            font-size: 3rem;
+                        }
+                    }
+    
+                    &_block {
+                        display: grid;
+                        align-items: end;
+                        
+                        
+
+                        &_slide {
+                            align-self: flex-start;
+                            display: grid;
+                            
+
+                            &_buttons {
+                                grid-row: 1 / 1;
+                                grid-column: 1;
+                                position: relative;
+                                top: calc(50% - (2rem / 2));
+                                display: grid;
+                                grid-template-columns: auto auto;
+                                align-items: flex-start;
+                                justify-content: space-between;
+
+                                @include tablet {
+                                    top: calc(50% - (3rem / 2));
+                                }
+
+                                @include desktop {
+                                    top: calc(50% - (3.5rem / 2));
+                                }
+                                
+
+                                &_button {
+                                    display: flex;
+                                    z-index: 5;
+                                    border: none;
+                                    background: transparent;
+                                    
+                                    svg {
+                                        width: 2rem;
+                                        height: 2rem;
+
+                                        @include tablet {
+                                            width: 3rem;
+                                            height: 3rem;
+                                        }
+
+                                        @include desktop {
+                                            width: 3.5rem;
+                                        height: 3.5rem;
+                                        }
+                                    }
+                                    
+                                }
+
+                                .arrow_left {
+                                    left: 0;
+                                    rotate: 180deg;
+                                }
+    
+                                .arrow_right {
+                                    right: 0;
+                                }
+                            }
+
+                            
+        
+                            &_link {
+                                display: flex;
+                                grid-row: 1 / 1;
+                                grid-column: 1;
+                                z-index: 4;
+                                img {
+                                    position: relative;
+                                    
+                                    object-fit: cover;
+                                    max-width: 100%;
+                                    height: inherit;
+                                }
+            
+                                &_img:hover {
+                                    -ms-transform: scale(1.02);
+                                    -webkit-transform: scale(1.02);
+                                    transform: scale(1.02);
+                                }
+                            }
+
+                            &_tag {
+                                display: flex;
+                                align-items: end;
+                                grid-row: 1 / 1;
+                                grid-column: 1;
+                                z-index: 3;
+                                
+                                
+                                &_background {
+                                    display: flex;
+                                    gap: 0.5rem;
+                                    background: $main-color;
+                                    padding: 0.5rem;
+                                    border-radius: 0.4rem;
+                                    
+                                    width: fit-content;
+                                    height: fit-content;
+                                    margin-left: 3%;
+                                    margin-bottom: 2%;
+                                    &_titre {
+                                        font-size: 1.8rem;
+                                        font-weight: $font_weight_medium;
+                                        color: $white;
+                                        p {
+                                            margin: 0;
+                                        }
+                                    }
+    
+                                    &_annee {
+                                        font-size: 1.8rem;
+                                        font-weight: $font_weight_medium;
+                                        color: $white;
+                                        p {
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+        
+                        &_txt {
+                            position: relative;
+                            z-index: 3;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.5rem;
+                            background: $main-color;
+                            padding: 0.2rem;
+                            border-radius: 0.4rem;
+                            
+                            width: fit-content;
+                            height: fit-content;
+                            grid-row: 1 / -1;
+                            grid-column: 1;
+                            margin-left: 3%;
+                            margin-bottom: 2%;
+                            &_titre {
+                                
+                            }
+            
+                            &_annee {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    
+    &_individual {
+        margin: 0 1rem;
+        display: grid;
+        justify-content: center;
+
+        h3 {
+            text-align: center;
+            font-family: $unbutu;
+            font-size: 1.3rem;
+        }
+
+        &_card {
+            
+
+            &_ancre {
+                
+                
+                &_img {
+                   
+                }
+    
+                
+            }
+
+            
+        }
+    }
+}
+

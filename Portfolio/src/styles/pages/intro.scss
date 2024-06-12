@@ -1,0 +1,79 @@
+.intro {
+    
+    height: 150vh;
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "whole-grid";
+
+    &_parallax {
+       
+        display: block;
+        
+        z-index: 10;
+        grid-area: whole-grid;
+
+        &_block {
+            display: flex;
+            
+            
+
+            &_img {
+                height: 150vh;
+                object-fit: cover;
+                background-position: bottom center;
+                background-size: auto 1038px;
+                background-repeat: repeat-x;
+                width: 100%;
+                
+                transform: scaleY(-1);
+                
+            }
+
+            &_txt {
+                
+            }
+
+            .title {
+                margin: 10rem 0 0.5rem 0;
+                text-align: center;
+                
+                font-size: 2.5rem;
+                font-family: $spectral;
+
+                @include tablet {
+                    font-size: 5rem;
+                    margin: 12.5rem 0 1rem 0;
+                }
+
+                @include desktop {
+                    font-size: 7rem;
+                    margin: 15rem 0 2rem 0;
+                }
+            }
+
+            .subtitle {
+                margin: 0;
+                text-align: center;
+                font-size: 1.5rem;
+                
+                font-family: $spectral;
+
+                @include tablet {
+                    font-size: 2.25rem;
+                }
+
+                @include desktop {
+                    font-size: 3rem;
+                }
+            }
+        }
+    
+       
+    
+        
+    }
+}

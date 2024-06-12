@@ -43,8 +43,9 @@ export default function Competences() {
             <h2>MES COMPÉTENCES</h2>
             <motion.div 
                 className="competences_cards"
+                style={{ opacity: inViewCompetence ? "1" : "0" }}
                 animate={{
-                    x: inViewCompetence ? "0" : "100%"
+                    x: inViewCompetence ? "0" : "120%"
                 }}
                 transition={{
                     duration: 0.3,
@@ -115,7 +116,7 @@ export default function Competences() {
                     <h3>Outils</h3>
                     <div className="competences_cards_card_block">
                         <div className="competences_cards_card_block_individual">
-                            <h4>Visual Studio Code</h4>
+                            <h4>VS Code</h4>
                             <div className="competences_cards_card_block_individual_img">
                                 <img src="./vscode-logo.webp" alt="vscode logo" />
                             </div>
