@@ -10,5 +10,10 @@
     }
   }
   
-
+  @mixin max1440() {
+    @media only screen and (min-width: 1440px) {
+      @content;
+    }
+  }
+  
   

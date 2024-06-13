@@ -1,8 +1,8 @@
-@import "./intro.scss";
-@import "./portrait.scss";
-@import "./propos.scss";
-@import "./competences.scss";
-@import "./projets.scss";
+@import "./section-homepage/intro.scss";
+@import "./section-homepage/portrait.scss";
+@import "./section-homepage/projets.scss";
+@import "./section-homepage/propos.scss";
+@import "./section-homepage/competences.scss";
 
 .home-content {
     background: $home-background;

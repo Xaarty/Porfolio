@@ -8,11 +8,11 @@
 html {
   font-family: $unbutu;
   position: relative;
-
 }
 
 body {
   margin: 0;
+  
 }
 
 
@@ -25,3 +25,6 @@ p {
   line-height: 2rem;
 }
 
+main {
+  overflow: hidden;
+}
