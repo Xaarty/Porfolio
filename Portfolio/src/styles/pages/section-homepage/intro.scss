@@ -2,8 +2,7 @@
     
     height: 150vh;
     perspective: 1px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -12,13 +11,13 @@
     &_parallax {
        
         display: block;
-        
+        overflow: hidden;
         z-index: 10;
         grid-area: whole-grid;
 
         &_block {
             display: flex;
-            
+            overflow: hidden;
             
 
             &_img {
@@ -28,7 +27,7 @@
                 background-size: auto 1038px;
                 background-repeat: repeat-x;
                 width: 100%;
-                
+                overflow: hidden;
                 transform: scaleY(-1);
                 
             }

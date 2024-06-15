@@ -24,7 +24,7 @@ export default function Header() {
     <header>
       <div className="header_background">
         <div className="header">
-          <NavLink to="/"><img src="./Logo.webp" alt="Logo du site" /></NavLink>
+          <NavLink to="/" className="header_logo"><img src="./Logo.webp" alt="Logo du site" /></NavLink>
           <nav className="header_nav">
             <NavLink to="https://github.com/Xaarty" className="header_nav_git"><img src="./Github-logo.webp" alt="Logo de Github" /></NavLink>
             <div className="header_nav_block">
@@ -49,8 +49,8 @@ export default function Header() {
           <div className="menu_block_bar"></div>
           <HashLink to="/#propos" className="menu_block_link"><p>A propos</p></HashLink>
           <HashLink to="/#projets" className="menu_block_link"><p>Mes projets</p></HashLink>
-          <HashLink to="/#skills" className="menu_block_link"><p>Skills</p></HashLink>
-          <HashLink to="/#github" className="menu_block_link"><p>GitHub</p></HashLink>
+          <HashLink to="/#competences" className="menu_block_link"><p>Compétences</p></HashLink>
+          <HashLink to="https://github.com/Xaarty" className="menu_block_link"><p>GitHub</p></HashLink>
         </div>
       </div>
       

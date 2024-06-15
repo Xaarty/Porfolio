@@ -8,11 +8,24 @@
 html {
   font-family: $unbutu;
   position: relative;
+  overflow-y:scroll;
+
+  @include largeScreen {
+    font-size: 1.2rem;
+  }
+
+  @include extraLargeScreen {
+    font-size: 1.7rem;
+  }
+  
+  @include fourK {
+    font-size: 2.4rem;
+  }
 }
 
 body {
   margin: 0;
-  
+  max-width: 100vw;
 }
 
 

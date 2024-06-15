@@ -39,7 +39,7 @@ export default function Competences() {
     }, []);
 
     return (
-        <section className="competences" ref={targetRefCompetence}>
+        <section className="competences" id="competences" ref={targetRefCompetence}>
             <h2>MES COMPÉTENCES</h2>
             <motion.div 
                 className="competences_cards"

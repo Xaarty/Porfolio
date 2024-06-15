@@ -1,4 +1,5 @@
 import Form from "./form";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -17,7 +18,17 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+        <div className="footer">
+          <div className="footer_links">
+            <NavLink to="/" className="footer_links_arrow"><img src="./arrow_top.webp" alt="flèche de retour en haut de page" /></NavLink>
+            <NavLink to="https://github.com/Xaarty" className="footer_links_github"><img src="./Github-logo.webp" alt="Logo de Github" /></NavLink>
+          </div>
+          <div className="footer_bar">
+            <div className="footer_bar_bar"></div>
+            <div className="footer_bar_bar"></div>
+          </div>
+          <p>Caillaud Mikael © 2024</p>
+        </div>
         
       </footer>
     );

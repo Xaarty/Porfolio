@@ -9,41 +9,62 @@ header {
         background-color: $white;
     }
     .header {
-        padding: 0rem 1rem 0 0.5rem;
+        padding: 1rem 0 0 0;
         display: grid;
-        grid-template-columns: 60px calc(100vw - 60px - 1.5rem) ;
+        grid-template-columns: 60px calc(100vw - 60px) ;
         
         @include tablet {
-            padding: 0.5rem 1rem 0 0.5rem;
-
+            padding: 0.5rem 0.5rem 0 0.5rem;
+            grid-template-columns: 60px calc(100vw - 60px - 1rem) ;
         }
 
         @include desktop {
             padding: 0.5rem 1rem 0 1rem;
+            grid-template-columns: 60px calc(100vw - 60px - 2rem) ;
+        }
 
+        @include largeScreen {
+            grid-template-columns: 80px calc(100vw - 80px + 20px - 2rem) ;
+        }
+
+        @include extraLargeScreen {
+            grid-template-columns: 100px calc(100vw - 100px + 20px - 2rem) ;
         }
     
-    
+        &_logo img {
+
+            @include largeScreen {
+                height: 80px;
+            }
+
+            @include extraLargeScreen {
+                height: 100px;
+            }
+        }
         
         &_nav {
             display: grid;
             white-space: nowrap;
-            grid-template-columns: 50% 50%;
+            grid-template-columns:  50% 50%;
             justify-content: end;
             align-content: center;
-            gap: 0.5rem;
 
-            @include tablet {
-                gap: 0.5rem;
-            }
-
-            @include desktop {
-                gap: 1rem;
-            }
+           
 
             &_git {
                 display: grid;
                 justify-content: end;
+
+                img {
+
+                    @include largeScreen {
+                        height: 100px;
+                    }
+
+                    @include extraLargeScreen{
+                        height: 120px;
+                    }
+                }
             }    
 
             &_block {
@@ -88,7 +109,6 @@ header {
         display: flex;
         justify-content: center;
         gap: 2%;
-        padding-right: 1.5rem;
         padding-bottom: 1rem;
 
         &_bar {

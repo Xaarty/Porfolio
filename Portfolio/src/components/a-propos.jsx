@@ -33,7 +33,7 @@ export default function Propos() {
     }, []);
 
     return (
-        <section ref={targetRefPropos}>
+        <section ref={targetRefPropos} id="propos">
             <motion.div
                 className="propos"
                 style={{ opacity: inViewPropos ? "1" : "0" }}

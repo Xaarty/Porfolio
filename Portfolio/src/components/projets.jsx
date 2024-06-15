@@ -36,7 +36,7 @@ export default function Projets() {
     const textY2 = useTransform(scrollYProgress, [0, 1], textY2Range);
 
     return (
-        <section className="projets" ref={ref}>
+        <section className="projets" ref={ref} id="projets">
             <Parallax pages={1} style={{ top: '0', left: '0' }} className="projets_parallax">
                 <ParallaxLayer offset={0} speed={2.5} className="projets_parallax_block">
                     <img src="./cloud2.webp" alt="" className="projets_parallax_block_background" />
