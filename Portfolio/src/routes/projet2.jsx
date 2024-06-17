@@ -15,7 +15,7 @@ export default function Bank () {
                 </div>
             </div>
             <div className="block_imglink">
-                <img src="./bank.webp" alt="projet bancaire react" className="projets_individual_card_ancre_img" />
+                <img src="./bank.webp" alt="projet bancaire react" className="projets_individual_card_ancre_img block_imglink_img" />
                 <div className="block_imglink_card"><NavLink to="https://github.com/Xaarty/Projet8" className="block_imglink_card_git">Projet sur GitHub</NavLink></div>
             </div>
             <div className="block_resume">
