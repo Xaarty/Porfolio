@@ -13,25 +13,23 @@ export default function Intro() {
     // Define media queries
     const isDesktop = useMediaQuery({ query: '(min-width: 1080px)' });
     const isTablet = useMediaQuery({ query: '(min-width: 768px) and (max-width: 1080px)' });
-    const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+    
 
     // State to store textY values based on media query
-    const [textYRange, setTextYRange] = useState(["0%", "75%"]);
+    const [textYRange, setTextYRange] = useState(["0%", "80%"]);
 
     useEffect(() => {
         if (isDesktop) {
             setTextYRange(["0%", "60%"]);
         } else if (isTablet) {
             setTextYRange(["0%", "70%"]);
-        } else if (isMobile) {
-            setTextYRange(["0%", "80%"]);
         }
-    }, [isDesktop, isTablet, isMobile]);
+    }, [isDesktop, isTablet]);
 
     const textY = useTransform(scrollYProgress, [0, 1], textYRange);
 
     return (
-        <section className="intro" ref={ref}>
+        <section className="intro" id="intro" ref={ref}>
             <Parallax pages={1} style={{ top: '0', left: '0' }} className="intro_parallax">
                 <ParallaxLayer offset={0} speed={2.5} className="intro_parallax_block">
                     <img src="./cloud.webp" alt="" className="intro_parallax_block_img" />

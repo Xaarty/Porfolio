@@ -44,7 +44,7 @@ export default function Header() {
           <div className="bar_bar"></div>
         </div>
       </div>
-      <div ref={panelRef} className={`menu ${openState ? 'open' : ''}`}>
+      <div ref={panelRef} className="menu">
         <div className="menu_block">
           <div className="menu_block_bar"></div>
           <HashLink to="/#propos" className="menu_block_link"><p>A propos</p></HashLink>

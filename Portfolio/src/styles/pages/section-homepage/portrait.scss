@@ -56,6 +56,9 @@
                 width: 100%;
                 justify-content: center;
 
+                &_buttonancre {
+                    width: 100% !important;
+                }
                 &_button{
                     width: 40%;
                     max-width: 18rem;

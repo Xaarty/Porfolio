@@ -1,11 +1,12 @@
 import Form from "./form";
+import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 
 export default function Footer() {
     return (
       <footer>
         <h2>Pour me contacter</h2> 
-        <div className="contact">
+        <div className="contact" id="contact">
           < Form />
           <div className="contact_perso">
             <div className="contact_perso_detail">
@@ -20,7 +21,7 @@ export default function Footer() {
         </div>
         <div className="footer">
           <div className="footer_links">
-            <NavLink to="/" className="footer_links_arrow"><img src="./arrow_top.webp" alt="flèche de retour en haut de page" /></NavLink>
+            <HashLink to="/#intro" className="footer_links_arrow"><img src="./arrow_top.webp" alt="flèche de retour en haut de page" /></HashLink>
             <NavLink to="https://github.com/Xaarty" className="footer_links_github"><img src="./Github-logo.webp" alt="Logo de Github" /></NavLink>
           </div>
           <div className="footer_bar">

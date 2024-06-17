@@ -201,33 +201,57 @@
                                 align-items: end;
                                 grid-row: 1 / 1;
                                 grid-column: 1;
-                                z-index: 3;
+                                
                                 
                                 
                                 &_background {
                                     display: flex;
-                                    gap: 0.5rem;
+                                    gap: 0.2rem;
                                     background: $main-color;
                                     padding: 0.5rem;
                                     border-radius: 0.4rem;
-                                    
+                                    z-index: 10;
                                     width: fit-content;
                                     height: fit-content;
                                     margin-left: 3%;
                                     margin-bottom: 2%;
+
+                                    @include tablet {
+                                        gap: 0.4rem;
+                                    }
+
+                                    @include desktop {
+                                        gap: 0.5rem;
+                                    }
                                     &_titre {
-                                        font-size: 1.8rem;
+                                        font-size: 0.8rem;
                                         font-weight: $font_weight_medium;
                                         color: $white;
+
+                                        @include tablet {
+                                            font-size: 1rem;
+                                        }
+
+                                        @include desktop {
+                                            font-size: 1.8rem;
+                                        }
                                         p {
                                             margin: 0;
                                         }
                                     }
     
                                     &_annee {
-                                        font-size: 1.8rem;
+                                        font-size: 0.8rem;
                                         font-weight: $font_weight_medium;
                                         color: $white;
+
+                                        @include tablet {
+                                            font-size: 1rem;
+                                        }
+
+                                        @include desktop {
+                                            font-size: 1.8rem;
+                                        }
                                         p {
                                             margin: 0;
                                         }

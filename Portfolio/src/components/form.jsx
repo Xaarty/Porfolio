@@ -1,6 +1,6 @@
 export default function Form () {
     return (
-        <form className="form" action="https://getform.io/f/rbeqwlkb" method="POST">
+        <form className="form" action="https://getform.io/f/rbeqwlkb" method="POST" id="contact">
             <h3>Écrivez-moi ici : </h3>
             <div className="form_input-field">
                 <label htmlFor="email" className="form_input-field_label">Email</label>
